@@ -2,10 +2,10 @@
 
 ## PERSONAL INFORMATION 
 
-Name: Abduvaliyev Ibrohim        
-Date of Dirth: 30.12.1999
-Address: 
-Mobile: +998 (93) 104-30-63
+Name: Abduvaliyev Ibrohim <br/>     
+Date of Dirth: 30.12.1999 <br/>     
+Address: <br/>     
+Mobile: +998 (93) 104-30-63 <br/>     
 Email:  abduvaliyevibrohim777@gmail.com
 
 ## PROFILE

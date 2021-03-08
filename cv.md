@@ -1,4 +1,4 @@
-#CV Abduvaliyev Ibrohim
+# CV Abduvaliyev Ibrohim
 
 ## PERSONAL INFORMATION 
 

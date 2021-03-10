@@ -14,9 +14,9 @@ I am a young student intending to continue developing my skills as a full stack 
 
 ## EDUCATION
 
-(TUIT) TASHKENT UNIVERSITY OF INFORMATION TECHNOLOGY
+* (TUIT) TASHKENT UNIVERSITY OF INFORMATION TECHNOLOGY
 
-Coursera (html css for web developers)
+* Coursera (html css for web developers)
 
 ## SKILLS
 

@@ -16,6 +16,12 @@ I am a young student intending to continue developing my skills as a full stack 
 
 (TUIT) TASHKENT UNIVERSITY OF INFORMATION TECHNOLOGY
 
+Coursera (html css for web developers)
+
 ## SKILLS
 
-HTML, CSS, JAVASCRIPT JAVA C++ BASIC, PHOTOSHOP, FIGMA, ADOBE ILLUSTRATOR
+HTML, CSS, JAVASCRIPT JAVA C++ BASIC, PHOTOSHOP, FIGMA, ADOBE ILLUSTRATOR,BOOTSTRAP
+
+## LANGUAGE
+
+B1(Intermediate)

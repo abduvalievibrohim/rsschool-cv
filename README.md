@@ -1,1 +1,0 @@
-https://abduvalievibrohim/rsschool-cv/cv

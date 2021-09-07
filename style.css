@@ -1,0 +1,335 @@
+/* ===== GOOGLE FONTES ====== */
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+/* ===== VARIABLES CSS ====== */
+:root {
+    --header-height: 3rem;
+    
+    /* ===== Colors ====== */
+    --title-color: #0b0a0a;
+    --text-color: rgb(255, 190, 0);
+    --text-color-light: #707070;
+    --text-color-dark: #5e5e5e;
+    --container-color-alt: #f0efef; 
+    --container-color: #fafafa;
+    --body-color: #818181;
+    --body-color-light: #fcf8f8;
+    --body-color-dark: #5e5e5e;
+
+    /* ===== Font and typography ====== */
+    --body-font: 'Sen', sans-serif;;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+
+    /* ===== Font weight ====== */
+    --font-medium: 500;
+    --font-seemi-bold: 600;
+
+    /* ===== Margenes ====== */
+    --mb-1: .5rem;
+    --mb-2: 2rem;
+    --mb-3: 1.5rem;
+
+    /* ===== z index ====== */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* ===== BASE ====== */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    box-sizing: border-box;
+}
+
+/* ===== Classes modified to reduce size and print onA4 sheet ====== */
+body{
+    background: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: var(--container-color-alt);
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 19fr 1fr;
+    grid-template-areas: 
+    "left_side right_side"
+    "github github";
+    box-shadow:   0 0 30px 15px rgba(255, 190,0);
+}
+
+.container .left_side{
+    position: relative;
+    background: var(--body-color-dark);
+    padding: 40px;
+    grid-area: left_side;
+}
+.container .right_side{
+    grid-area: right_side;
+    position: relative;
+    background: var(--body-color-light);
+    padding: 40px;
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 190, 0);
+}
+.imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imgBx img{
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 100%;
+}
+.profileText h2{
+    color: var(--container-color);
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center ;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-seemi-bold);
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo{
+    padding-top: 40px;
+    border-bottom: 1px solid rgba(255, 190, 0);
+}
+.title{
+    color: var(--container-color);
+    text-transform: uppercase;
+    font-weight: var(--font-seemi-bold);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li span{
+    color: var(--container-color);
+    font-weight: 300;
+
+}
+.bx{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: var(--text-color);
+}
+.education li{
+     margin-bottom: 15px;
+ }
+.education h5{
+    color: var(--text-color);
+    font-weight: 500;
+}
+.education h4{
+    color: var(--container-color);
+    font-weight: 200;
+}
+.education h4:nth-child(2){
+    color: var(--container-color);
+    font-weight: 600;
+}
+.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: var(--container-color);
+    display: block;
+    margin-top: 5px;
+}
+.percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--text-color);
+}
+.about{
+    margin-bottom: 50px;
+
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: var(--text-color-dark);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+p{
+    color: var(--text-color-light);
+}
+.about ul{
+    position: relative;
+}
+.about ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.about ul li h4{
+    color: var(--text-color-light);
+    font-weight: 6 00;
+    text-transform: uppercase;
+}
+
+.skills .percent{
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background: var(--body-color);
+    display: block;
+    margin-top: 5px;
+}
+.percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--text-color);
+}
+.text3{
+    display: flex;
+    justify-content: space-between;
+}
+.text3 span{
+
+    color: var(--text-color);
+}
+.interest{
+    margin-top: 20px;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.interest ul li{
+    list-style: none;
+    color: var(--text-color-light);
+    margin: 10px 0;
+}
+.github{
+    padding: 0 20px;
+    display: flex;
+    grid-area: github;
+    border-top: 2px solid var(--text-color);
+    background: var(--body-color-dark   );
+    justify-content: space-between;
+    align-items: center;
+}
+.link_github{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--container-color);
+}
+.link_github img{
+    width: 40px;
+    margin-right: 20px;
+}
+.link_rsschool img{
+
+    width: 90px;
+}
+@media(max-width:1009px){
+    .contactInfo .text{
+        font-size: 15px;
+    }
+}
+@media(max-width: 974px){
+    .contactInfo .text{
+        font-size: 15px;
+    }
+    
+}
+@media(max-width: 720px){
+    .contactInfo .text{
+        font-size: 11px;
+    }
+    .profileText h2{ 
+        margin-top: 15px;
+        font-size: 1rem;
+        line-height: 1em;
+    }
+    .imgBx{
+        width: 150px;
+        height: 150px;
+    }
+    .imgBx img{
+        top: -15%;
+    }
+    .title{
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+    .bx{
+        width: 15px;
+        font-size: 15px;
+    }
+    .about h2{
+        font-size: 18px;
+    }
+    .about p{
+        font-size: 14px;
+    }
+    .about ul li h4{
+        font-size: 14px;
+    }
+    .interest ul li{
+        font-size: 14px;
+    }
+    
+}
+@media(max-width: 540px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 0.1fr;
+       
+        grid-template-areas: 
+        "left_side"
+        "right_side"
+        "github";
+        }
+}
